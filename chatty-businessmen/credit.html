@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="Hugo 0.83.1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./src/App.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/man.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/man.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/man.png"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title> About Chatty Businessmen</title>
+    
+    <script>
+
+      /*
+      Credits screen script
+      By JavaScript Kit 
+      http://javascriptkit.com
+      Over 400+ original scripts here!
+      */
+      
+      function opencredit(){
+      //set this to the file of the credit
+      var creditfile="credits.html"
+      
+      if (document.all)
+      creditwindow=window.open(creditfile,"","width=445,height=250")
+      else
+      creditwindow=window.open(creditfile,"","width=445,height=250,scrollbars")
+      }
+      </script>
+  </head>
+  <body
+    data-new-gr-c-s-check-loaded="14.1056.0"
+    data-gr-ext-installed=""
+  >
+    <div class="bkg">
+      <main id="main">
+        <div class="container">
+          <div class="browser">
+            <div class="browser__bar">
+              <div class="browser__stoplight">
+                <div class="stoplight stoplight--1"></div>
+                <div class="stoplight stoplight--2"></div>
+                <div class="stoplight stoplight--3"></div>
+              </div>
+              <h1 class="fs-7">Chatty Businessmen</h1>
+            </div>
+            <div class="browser__content df-wrap">
+              <div class="browser__content--image"><img src="images/man.png"></div>
+              <div class="browser__content--txt">
+                <h2 class="fs-1">Credits</h2>
+                <p class="fs-4"><em>Developed By Arenite and Joabutt<br>Check out our portfolios at qeshm.tk and joabutt.dev<br>Want to use our software for your business? Message us!<br><br>Contact us on discord: Arenite#0919/Wuff#7128 or by email qeshmsingh@gmail.com</em></p>
+                <div class="df-wrap btn__container browser__content--btns">
+                  Found any probelms? Message us on discord: Wuff#7128 or Arenite#0919
+                </div>
+              </div>            </div>
+          </div>
+        </div>
+        <script>
+          let windowHTML;
+          const browser = document.querySelector(".browser");
+          function fetchReplacementText() {
+            const a = [
+              "why, tho?",
+              "just don’t",
+              "like … can we just not?",
+              "what’s up!?",
+              "you won a useless prize!",
+              "why would you? how could you?",
+              "um … awkward …",
+              "just moving through this world clicking things?",
+              "stop pushing my buttons!",
+              "you just had to try…",
+              
+              "psst! check our portfolios! joabutt.dev and qeshm.tk",
+              "no…just no…",
+              "stop clicking things!",
+              "what did you <em>think</em> would happen?",
+              "stop it!",
+              "ouch! that hurts!",
+              "it’s not a real browser, you know …",
+              "let’s not click things and say we did …",
+            ];
+            return a[Math.floor(Math.random() * (a.length - 1))];
+          }
+          window.addEventListener("DOMContentLoaded", () => {
+            windowHTML = browser.innerHTML;
+          }),
+            document
+              .querySelector(".container")
+              .addEventListener("click", (a) => {
+                a.target.classList.contains("stoplight--1") &&
+                  ((browser.innerHTML = `<div class="browser__content" style="text-align: center;"><div class="browser__content--txt">${fetchReplacementText()}</div></div>`),
+                  window.setTimeout(function () {
+                    browser.innerHTML = windowHTML;
+                  }, 1600));
+              });
+        </script>
+      </main>
+    </div>
+    <footer> Web design and Chatty Businessmen by Wuff#7128 and Arenite#0919</footer>
+  </body>
+</html>
